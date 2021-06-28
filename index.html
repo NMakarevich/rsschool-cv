@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Curriculum vitae</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Curriculum vitae</h1>
+            <nav>
+                <ul>
+                    <li><a href="#personal-info">Personal information</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code-examples">Code examples</a></li>
+                    <li><a href="#work-experience">Work experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="personal-info">
+                <h2>Personal information</h2>
+                <div class="container">
+                    <div>
+                        <ul>
+                            <li><b>First name:</b> Nilolai</li>
+                            <li><b>Second name:</b> Makarevich</li>
+                            <li><b>Age:</b> 27</li>
+                            <li><b>City:</b> Petergof</li>
+                            <li><b>Tel.:</b> +7 (999) 215-25-07</li>
+                        </ul>
+                    </div>
+                    <img src="img/photo.jpg" alt="Personal photo">
+                </div>
+            </section>
+            <section id="about-me">
+                <h2>About me</h2>
+                <p><b>Main goal:</b> I want to get knowledge for entry in front-end development.</p>
+                <p><b>Strenghts:</b> I learn new information rapidly and can find needed information. 
+                    I have basic knowledge of HTML, CSS and JavaScript. I can create a simple HTML page. 
+                    I started learn Angular, but it’s very hard to understand yet. 
+                    However, I have 2 simple projects which maked on Angular.</p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ol>
+                    <li>HTML - basic level</li>
+                    <li>CSS - basic level</li>
+                    <li>JavaScript - basic level</li>
+                    <li>TypeScript - beginning</li>
+                    <li>Angular - beginning</li>
+                </ol>
+            </section>
+            <section id="code-examples">
+                <h2>Code examples</h2>
+                <ol>
+                    <li>
+                        <a href="https://github.com/NMakarevich/Zaverstai_3.0" title="Repository link">
+                            HTML Academy marathon Zaverstai
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/NMakarevich/HotWeatherWidget" title="Repository link">
+                            Weather widget on Angular
+                        </a>
+                    </li>
+                    <li>
+                        <p>Simple code example: JavaScript (The Hashtag Generator)</p>
+<pre><code>
+    function generateHashtag (str) {
+        if(!str.trim()) return false;
+            str = '#' + str.split(' ').filter(item => item != '')
+                .map(item => item[0].toUpperCase() + item.slice(1)).join('');
+        return str.length &lt;= 140 ? str : false;
+    }
+</code></pre>
+                </ol>
+            </section>
+            <section id="work-experience">
+                <h2>Work experience</h2>
+                <p>I don't have any work experience.</p>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <ol>
+                    <li>
+                        <p><b>ITMO University</b><br>
+                            Faculty of Laser and Light Engineering (ex. Faculty of Physics and Engineering) - Master’s degree (2018)
+                        </p>
+                    </li>
+                    <li><p>LearnJS course “JavaScript/DOM/Interfaces”</p>
+                        <img src="img/certificate.jpg" alt="LearnJS certificate">
+                    </li>
+                </ol>
+            </section>
+            <section id="languages">
+                <h2>Languages</h2>
+                <p>English (A2)</p>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div>
+                    <a href="https://rs.school/js/" title="Visit RS School site"><img src="img/rs_school_js.svg" alt="RS School logo"></a>
+                    <a href="https://rs.school/js/" title="Visit RS School site">RS School «JavaScript/Front-end» course</a>
+                </div>
+                <div>
+                    <a href="https://github.com/NMakarevich" title="Visit my GitHub account">My GitHub</a>
+                    <span>2021</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
