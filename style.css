@@ -118,6 +118,10 @@ section {
     line-height: 30px;
 }
 
+.list-item img {
+    width: 100%;
+}
+
 a {
     color: #3C3C3C;
 }
