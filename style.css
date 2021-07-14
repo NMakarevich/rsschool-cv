@@ -126,7 +126,8 @@ a {
     color: #3C3C3C;
 }
 
-p, a {
+p, 
+a {
     font-size: 22px;
     line-height: 30px;
 }
@@ -136,6 +137,7 @@ ol {
 }
 
 pre {
+    overflow: hidden;
     font-size: 20px;
     line-height: 25px;
     word-wrap: break-word;
