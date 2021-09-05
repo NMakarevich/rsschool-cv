@@ -22,10 +22,10 @@
 8. Angular - beginning.
 
 ## Code examples
-1. [Search Repositories on Github on Angular](https://github.com/NMakarevich/git-search, "Project Repository")
-2. [JS:FE Museum project (Stage 0)](https://rolling-scopes-school.github.io/nmakarevich-JSFEPRESCHOOL/museum/, "Deploy link")
-3. [JS:FE Slider JS project (Stage 0)](https://github.com/NMakarevich/vertical-slider, "Project Repository")
-4. [JS:FE Photofilter JS project (Stage 0)](https://github.com/NMakarevich/photofilter, "Project Repository")
+1. [Search Repositories on Github on Angular](https://github.com/NMakarevich/git-search "Project Repository")
+2. [JS:FE Museum project (Stage 0)](https://rolling-scopes-school.github.io/nmakarevich-JSFEPRESCHOOL/museum/ "Deploy link")
+3. [JS:FE Slider JS project (Stage 0)](https://github.com/NMakarevich/vertical-slider "Project Repository")
+4. [JS:FE Photofilter JS project (Stage 0)](https://github.com/NMakarevich/photofilter "Project Repository")
 5. *Simple code example:*
 JavaScript (The Hashtag Generator)
 <pre><code>function generateHashtag (str) {
