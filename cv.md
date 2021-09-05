@@ -14,14 +14,19 @@
 ## Skills 
 1. HTML - basic level.
 2. CSS - basic level.
-3. JavaScript - basic level.
-4. TypeScript - beginning.
-5. Angular - beginning.
+3. SASS - basic level.
+4. JavaScript - basic level.
+5. Webpack - basic level.
+6. Git - basic level.
+7. TypeScript - beginning.
+8. Angular - beginning.
 
 ## Code examples
-1. [HTML Academy marathon Zaverstai](https://github.com/NMakarevich/Zaverstai_3.0, "Project Repository")
-2. [Weather widget on Angular](https://github.com/NMakarevich/HotWeatherWidget, "Project Repository")
-3. *Simple code example:*
+1. [Search Repositories on Github on Angular](https://github.com/NMakarevich/git-search, "Project Repository")
+2. [JS:FE Museum project (Stage 0)](https://rolling-scopes-school.github.io/nmakarevich-JSFEPRESCHOOL/museum/, "Deploy link")
+3. [JS:FE Slider JS project (Stage 0)](https://github.com/NMakarevich/vertical-slider, "Project Repository")
+4. [JS:FE Photofilter JS project (Stage 0)](https://github.com/NMakarevich/photofilter, "Project Repository")
+5. *Simple code example:*
 JavaScript (The Hashtag Generator)
 <pre><code>function generateHashtag (str) {
     if(!str.trim()) return false;
@@ -38,6 +43,7 @@ I don't have any work experience.
    Faculty of Laser and Light Engineering (ex. Faculty of Physics and Engineering) - Master's degree (2018)
 2. LearnJS course "JavaScript/DOM/Interfaces" ![Certificate](/img/certificate.jpg)
 3. HTML Academy free cources and marathons.
+4. Rolling Scopes School 2021Q3 Stage0.
 
 ## Languages
 English (A2)
