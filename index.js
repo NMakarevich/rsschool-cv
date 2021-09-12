@@ -41,14 +41,15 @@ let sliderHeight;
 
 function updateSliderSize() {
   const descriptions = Array.from(innerSlider.querySelectorAll('.description'));
-  const addHeight = Math.max(...descriptions.map(item => item.offsetHeight));
+  const addHeight = Math.max(...descriptions.map(item => item.clientHeight));
   sliderWidth = section.offsetWidth * 0.8 > 560 ? 560 : section.offsetWidth * 0.8 < 280 ? 230 : section.offsetWidth * 0.8 - 5;
   sliderContainer.style.width = sliderWidth + 'px';
   slider.style.height = sliderWidth / imgSizeRatio + addHeight + 40 + 'px';
   innerSlider.style.transform = `translateX(-${currentSlide * sliderWidth}px)`
 }
 
-updateSliderSize();
+document.addEventListener('DOMContentLoaded', updateSliderSize());
+updateSliderSize()
 
 window.addEventListener('resize', updateSliderSize)
 
