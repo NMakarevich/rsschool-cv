@@ -345,6 +345,10 @@ summary::marker {
   flex-direction: column;
 }
 
+figure figcaption {
+  padding-bottom: 10px;
+}
+
 .inner-slider a {
   text-decoration: none;
   color: var(--blue-color);
@@ -354,6 +358,32 @@ summary::marker {
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
+}
+
+.description {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--blue-color);
+  border-radius: 10px;
+}
+
+.description .tech-list {
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  background-color: var(--blue-color);
+  border-radius: 3px;
 }
 
 footer {
