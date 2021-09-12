@@ -1,6 +1,6 @@
 const sandwich = document.querySelector('.sandwich');
 const nav = document.querySelector('nav');
-const navList = document.querySelector('.nav-list')
+const navList = document.querySelector('.nav-list');
     
 sandwich.addEventListener('click', () => {
   sandwich.classList.toggle('open')
@@ -32,7 +32,7 @@ const imgSizeRatio = imgWidth / imgHeight;
 const cloneFirstSlide = slides[0].cloneNode(true);
 const cloneLastSlide = slides[sliderLength - 1].cloneNode(true);
 innerSlider.appendChild(cloneFirstSlide);
-innerSlider.insertBefore(cloneLastSlide, slides[0])
+innerSlider.insertBefore(cloneLastSlide, slides[0]);
 
 let currentSlide = 1;
 let allowShift = true;
@@ -40,13 +40,16 @@ let sliderWidth;
 let sliderHeight;
 
 function updateSliderSize() {
+  const descriptions = Array.from(innerSlider.querySelectorAll('.description'));
+  const addHeight = Math.max(...descriptions.map(item => item.clientHeight));
   sliderWidth = section.offsetWidth * 0.8 > 560 ? 560 : section.offsetWidth * 0.8 < 280 ? 230 : section.offsetWidth * 0.8 - 5;
   sliderContainer.style.width = sliderWidth + 'px';
-  slider.style.height = sliderWidth / imgSizeRatio + 40 + 'px';
+  slider.style.height = sliderWidth / imgSizeRatio + addHeight + 40 + 'px';
   innerSlider.style.transform = `translateX(-${currentSlide * sliderWidth}px)`
 }
 
-updateSliderSize();
+document.addEventListener('DOMContentLoaded', updateSliderSize());
+updateSliderSize()
 
 window.addEventListener('resize', updateSliderSize)
 
