@@ -50,6 +50,7 @@ body {
 }
 
 header {
+  position: relative;
   min-height: 79px;
   max-width: 1200px;
   display: flex;
@@ -59,7 +60,6 @@ header {
   border-radius: 10px;
   box-sizing: border-box;
   background: #FFFFFF;
-  transition: all .3s;
 }
 
 nav {
@@ -69,42 +69,43 @@ nav {
 }
 
 .sandwich {
+  align-self: flex-start;
+  position: relative;
   display: none;
   align-items: center;
-  position: absolute;
+  top: 7px;
   left: 20px;
-  top: 0px;
   width: 30px;
-  height: 30px;
+  height: 25px;
   cursor: pointer;
 }
 
 .sandwich .sandwich-inner {
-  position: relative;
   width: 100%;
   height: 5px;
   background: var(--blue-color);
+  transition: opacity .3s;
+}
+
+.sandwich::before {
+  position: absolute;
+  top: 0px;
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: var(--blue-color);
+  z-index: 2;
   transition: transform .3s;
 }
 
-.sandwich .sandwich-inner::before {
+.sandwich::after {
   position: absolute;
-  transform: translateY(-10px);
+  bottom: 0px;
   content: "";
-  width: 100%;
+  width: 30px;
   height: 5px;
   background: var(--blue-color);
-  transform-origin: center;
-}
-
-.sandwich .sandwich-inner::after {
-  position: absolute;
-  transform: translateY(10px);
-  content: "";
-  width: 100%;
-  height: 5px;
-  background: var(--blue-color);
-  transform-origin: center;
+  transition: transform .3s;
 }
 
 .nav-list {
@@ -173,20 +174,21 @@ section {
     overflow: hidden;
   }
 
-  nav .sandwich {
+  .sandwich {
     display: flex;
+    z-index: 2;
   }
 
   .sandwich.open .sandwich-inner {
-    transform: rotate(45deg);  
+    opacity: 0;  
   }
   
-  .sandwich.open .sandwich-inner::before {
-    transform: translateY(0); 
+  .sandwich.open::before {
+    transform: translateY(10px) rotate(45deg); 
   }
   
-  .sandwich.open .sandwich-inner::after {
-    transform: translateY(0) rotate(90deg);
+  .sandwich.open::after {
+    transform: translateY(-10px) rotate(-45deg);
   }
 
   .nav-list {

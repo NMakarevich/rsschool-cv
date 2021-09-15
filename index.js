@@ -12,6 +12,13 @@ sandwich.addEventListener('click', () => {
   }
 })
 
+document.addEventListener('click', (event) => {
+  if(!event.target.classList.contains('sandwich') && nav.offsetHeight > 30) {
+    sandwich.classList.remove('open')
+    nav.style.maxHeight = '30px';
+  }
+})
+
 navList.addEventListener('click', () => {
   sandwich.classList.toggle('open')
   nav.style.maxHeight = '30px';
