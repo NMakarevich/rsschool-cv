@@ -7,7 +7,7 @@
 ##  Contacts
 
 <img src="https://cdn-icons-png.flaticon.com/128/9946/9946341.png" width="12"> Tel: +7 (999) 215-25-07 <br>
-<img src="https://cdn-icons-png.flaticon.com/128/9840/9840614.png" width="12"> e-mail: nikoladze529@mail.ru <br>
+<img src="https://cdn-icons-png.flaticon.com/128/726/726623.png" width="12"> e-mail: nikoladze529@mail.ru <br>
 <img src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" width="12"> GitHub: [NMakarevich](https://github.com/NMakarevich) <br>
 <img src="https://cdn-icons-png.flaticon.com/128/16166/16166102.png" width="12"> Telegram: [@nmakarevich94](https://t.me/nmakarevich94) <br>
 <img src="https://cdn-icons-png.flaticon.com/128/4945/4945973.png" width="12"> Discord: [#NMakarevich](https://discord.com/users/856975217322229771)
