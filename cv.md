@@ -17,15 +17,23 @@ I like creating user-frendly interfaces. I have an experience in development on 
 
 ## Skills
 <div style="display: flex; gap: 8px">
-<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/html5/html5-original.svg" width="32">HTML</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px; flex-wrap: wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/html5/html5-original.svg" width="32">HTML</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/css3/css3-original.svg" width="32">CSS</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/sass/sass-original.svg" width="32">SASS</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/javascript/javascript-plain.svg" width="32">Javascript</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/typescript/typescript-plain.svg" width="32">Typescript</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/vitejs/vitejs-original.svg" width="32">Vite</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/react/react-original.svg" width="32">React</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/materialui/materialui-original.svg" width="32">MUI</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nextjs/nextjs-original.svg" width="32">NextJS</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/angular/angular-original.svg" width="32">Angular</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/angularmaterial/angularmaterial-original.svg" width="32">Angular Material</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/rxjs/rxjs-original.svg" width="32">RxJS</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/ngrx/ngrx-original.svg" width="32">NgRx</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nodejs/nodejs-original.svg" width="32">NodeJS</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nestjs/nestjs-original.svg" width="32">NestJS</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/docker/docker-original.svg" width="32">Docker</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/prisma/prisma-original.svg" width="32">Prisma</span>
 </div>
 
 ## Education
