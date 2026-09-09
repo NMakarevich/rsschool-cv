@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
   <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/default.min.css">
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </head>
 <body>
   <header>
@@ -200,7 +203,19 @@
           </ul>
         </section>
         <section id="code" class="content-section">
-          <h2 class="section-header"></h2>
+          <h2 class="section-header">Code example</h2>
+          <pre>
+            <code class="typescript">
+updateTodo = (todo: TodoItem, date: string) => {
+  this.todos.update((todos) => {
+    const index = todos[date].findIndex(({ id }) => id === todo.id);
+    todos[date][index] = { ...todo };
+    return { ...todos };
+  });
+  localStorage.setItem(LS_TASKS, JSON.stringify(this.todos()));
+};
+            </code>
+          </pre>
         </section>
         <section id="languages" class="content-section">
           <h2 class="section-header"></h2>
