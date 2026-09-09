@@ -71,24 +71,31 @@ main {
   object-fit: fill;
 }
 
-.navigation .navigation-list {
+.list {
   display: flex;
-  list-style: none;
-  justify-content: space-around;
+  flex-direction: column;
   gap: 16px;
+}
+
+.list-item {
+  padding: 4px;
+}
+
+.navigation .navigation-list {
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
+  list-style: none;
 }
 
-.navigation-list_item {
-  .nav-link {
-    position: relative;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-  }
+.link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
-.underline-link::after {
+.link::after {
     position: absolute;
     content: '';
     bottom: -5px;
@@ -99,7 +106,7 @@ main {
     transition: width 0.4s;
   }
 
-  .underline-link:hover::after {
+  .link:hover::after {
     width: 100%;
   }
 
@@ -112,17 +119,13 @@ main {
 }
 
 .contacts-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   list-style: none;
-}
 
-.contacts-list_item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 4px;
+  .list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 }
 
 .contacts-list_icon {
@@ -131,68 +134,29 @@ main {
 }
 
 .skills-list {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  gap: 16px;
   flex-wrap: wrap;
   list-style: none;
-}
 
-.skills-list_item {
-  padding: 4px;
+  .list-item {
+    .icon-wrapper {
+      width: 64px;
+      height: 64px;
 
-  .icon-wrapper {
-    width: 64px;
-    height: 64px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
     }
   }
 }
 
-.education-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px
+.education-year {
+  font-weight: 700;
 }
 
-.education-list_item {
-  padding: 4px;
-
-  .education-year {
-    font-weight: 700;
-  }
-}
-
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.projects-list_item {
-  padding: 4px;
-}
-
-.project-link {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-
-.language-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px
-}
-
-.language-list_item {
-  padding: 4px;
-}
 
 @media (max-width: 900px) {
   .main-content {
