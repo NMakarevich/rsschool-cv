@@ -184,7 +184,7 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .main-content {
     grid-template-columns: repeat(1, 1fr);
   }
