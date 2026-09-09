@@ -139,6 +139,8 @@ main {
 }
 
 .skills-list_item {
+  padding: 4px;
+
   .icon-wrapper {
     width: 64px;
     height: 64px;
@@ -148,6 +150,20 @@ main {
       height: 100%;
       object-fit: fill;
     }
+  }
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+.education-list_item {
+  padding: 4px;
+
+  .education-year {
+    font-weight: 700;
   }
 }
 
