@@ -184,6 +184,16 @@ main {
   cursor: pointer;
 }
 
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+.language-list_item {
+  padding: 4px;
+}
+
 @media (max-width: 900px) {
   .main-content {
     grid-template-columns: repeat(1, 1fr);
