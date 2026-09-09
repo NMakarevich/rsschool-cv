@@ -18,6 +18,18 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background-color: #1D1B20;
+  color: #fff;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+section {
+  width: 100%;
+  padding: 8px;
+  background-color: #49454F;
+  border-radius: 16px;
+  border: 2px solid #79747E;
 }
 
 main {
@@ -31,21 +43,28 @@ main {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 0 16px;
 }
 
-.header-content {
-  flex: 1;
+header {
+  .header-content {
+    width: 100%;
+    background-color: #49454F;
+    border: 1px solid #79747E;
+    border-top-color: transparent;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .navigation {
+    padding: 20px;
+  }
+}
+
+.section-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-.content-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 16px;
+  padding: 20px;
 }
 
 .info {
@@ -75,6 +94,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  list-style: none;
 }
 
 .list-item {
@@ -85,13 +105,12 @@ main {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  list-style: none;
 }
 
 .link {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -102,7 +121,7 @@ main {
     display: block;
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: #fff;
     transition: width 0.4s;
   }
 
@@ -115,22 +134,19 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 16px;
   width: 100%;
-  padding: 8px;
 }
 
 .contacts-list {
-  list-style: none;
-
   .list-item {
     display: flex;
     align-items: center;
     gap: 8px;
   }
-}
 
-.contacts-list_icon {
-  width: 24px;
-  height: 24px;
+  .contacts-list_icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .skills-list {
@@ -151,18 +167,31 @@ main {
       }
     }
   }
+
+  .list-item:last-child {
+    margin-right: auto;
+  }
 }
 
 .education-year {
   font-weight: 700;
 }
 
+#code {
+  font-size: 16px;
+} 
+
 .footer-content {
-  flex: 1;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 20px;
+  background-color: #49454F;
+  border-radius: 20px 20px 0 0 ;
+  border: 1px solid #79747E;
+  border-bottom-color: transparent;
 
   .github-link {
     display: flex;
@@ -186,8 +215,22 @@ main {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .main-content {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  #code {
+    font-size: 12px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 16px;
   }
 }
