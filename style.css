@@ -56,15 +56,15 @@ main {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-}
 
-.image-wrapper {
+  .image-wrapper {
     display: block;
     width: 192px;
     height: 192px;
     border-radius: 50%;
     overflow: hidden;
   }
+}
 
 .avatar {
   width: 100%;
@@ -155,6 +155,34 @@ main {
 
 .education-year {
   font-weight: 700;
+}
+
+.footer-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .github-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .image-wrapper {
+      width: 32px;
+    }
+  }
+
+  .github-link::after {
+    display: none;
+  }
+
+  .school-link {
+    .image-wrapper {
+      width: 128px;
+    }
+  }
 }
 
 
