@@ -130,6 +130,27 @@ main {
   height: 24px;
 }
 
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.skills-list_item {
+  .icon-wrapper {
+    width: 64px;
+    height: 64px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .main-content {
     grid-template-columns: repeat(1, 1fr);
