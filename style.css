@@ -41,8 +41,16 @@ main {
   gap: 16px;
 }
 
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
 .info {
   display: flex;
+  flex-direction: row;
   gap: 16px;
   justify-content: center;
   align-items: center;
@@ -52,8 +60,8 @@ main {
 
 .image-wrapper {
     display: block;
-    width: 128px;
-    height: 128px;
+    width: 192px;
+    height: 192px;
     border-radius: 50%;
     overflow: hidden;
   }
@@ -92,5 +100,38 @@ main {
 
   .nav-link:hover::after {
     width: 100%;
+  }
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  width: 100%;
+  padding: 8px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.contacts-list_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+}
+
+.contacts-list_icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
