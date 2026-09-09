@@ -143,6 +143,12 @@ header {
     gap: 8px;
   }
 
+  .contact-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
   .contacts-list_icon {
     width: 24px;
     height: 24px;
@@ -231,6 +237,13 @@ header {
 @media (max-width: 480px) {
   body {
     font-size: 16px;
+  }
+
+  .contacts-list {
+    .list-item {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
   
   .footer-content {
