@@ -26,6 +26,7 @@ I like creating user-frendly interfaces. I have an experience in development on 
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nextjs/nextjs-original.svg" width="32">NextJS</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/angular/angular-original.svg" width="32">Angular</span>
 <span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nodejs/nodejs-original.svg" width="32">NodeJS</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nestjs/nestjs-original.svg" width="32">NestJS</span>
 </div>
 
 ## Education
