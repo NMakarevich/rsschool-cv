@@ -21,7 +21,6 @@ body {
   background-color: #1D1B20;
   color: #fff;
   font-size: 20px;
-  padding: 0 20px;
 }
 
 section {
@@ -47,16 +46,60 @@ main {
 }
 
 header {
+  background-color: #49454F;
+  border: 1px solid transparent;
+  border-bottom-color: #79747E;
+
   .header-content {
     width: 100%;
-    background-color: #49454F;
-    border: 1px solid #79747E;
-    border-top-color: transparent;
-    border-radius: 0 0 20px 20px;
   }
 
   .navigation {
+    position: relative;
     padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .burger {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    width: 24px;
+    height: 16px;
+
+    input {
+      width: 0;
+      height: 0;
+      appearance: none;
+    }
+  }
+
+  .burger::after,
+  .burger::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.4s;
+  }
+
+  .burger::before {
+    transform: translateY(0);
+  }
+
+  .burger::after {
+    transform: translateY(12px);
+  }
+
+  .burger:has(input:checked)::before {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .burger:has(input:checked)::after {
+    transform: translateY(6px) rotate(-45deg);
   }
 }
 
@@ -187,6 +230,12 @@ header {
   font-size: 16px;
 } 
 
+footer {
+  background-color: #49454F;
+  border: 1px solid transparent;
+  border-top-color: #79747E;
+}
+
 .footer-content {
   width: 100%;
   display: flex;
@@ -194,10 +243,6 @@ header {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  background-color: #49454F;
-  border-radius: 20px 20px 0 0 ;
-  border: 1px solid #79747E;
-  border-bottom-color: transparent;
 
   .github-link {
     display: flex;
@@ -220,10 +265,36 @@ header {
   }
 }
 
-
 @media (max-width: 1100px) {
   .main-content {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .header-content {
+    .burger {
+      display: flex;
+    }
+
+    .navigation-list {
+      position: absolute;
+      top: 56px;
+      left: -16px;
+      flex-direction: column;
+      padding: 20px 40px;
+      transform: translateX(-300px);
+      transform-origin: 0 0;
+      background-color: #49454F;
+      border: 1px solid #79747E;
+      border-radius: 0 0 20px 20px;
+      transition: transform 0.4s;
+      z-index: 1;
+    }
+
+    .burger:has(input:checked) + .navigation-list {
+      transform: translateX(0);
+    }
   }
 }
 
