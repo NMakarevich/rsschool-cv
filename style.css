@@ -21,7 +21,6 @@ body {
   background-color: #1D1B20;
   color: #fff;
   font-size: 20px;
-  padding: 0 20px;
 }
 
 section {
@@ -47,12 +46,12 @@ main {
 }
 
 header {
+  background-color: #49454F;
+  border: 1px solid transparent;
+  border-bottom-color: #79747E;
+
   .header-content {
     width: 100%;
-    background-color: #49454F;
-    border: 1px solid #79747E;
-    border-top-color: transparent;
-    border-radius: 0 0 20px 20px;
   }
 
   .navigation {
@@ -187,6 +186,12 @@ header {
   font-size: 16px;
 } 
 
+footer {
+  background-color: #49454F;
+  border: 1px solid transparent;
+  border-top-color: #79747E;
+}
+
 .footer-content {
   width: 100%;
   display: flex;
@@ -194,10 +199,6 @@ header {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  background-color: #49454F;
-  border-radius: 20px 20px 0 0 ;
-  border: 1px solid #79747E;
-  border-bottom-color: transparent;
 
   .github-link {
     display: flex;
